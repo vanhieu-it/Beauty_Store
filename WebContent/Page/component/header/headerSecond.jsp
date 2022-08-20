@@ -5,17 +5,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<div class="input-group header-search">
-					<input type="text" class="form-control" id="search-product"
-						placeholder="Tìm kiếm..."> <select class="form-select"
-						aria-label="Default select example">
-						<option selected>Sản phẩm</option>
-						<option value="1">Tin tức</option>
-					</select>
-					<button class="btn btn-outline-secondary" type="button">
-						<i class="fas fa-search"></i>
-					</button>
-				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="header-logo">

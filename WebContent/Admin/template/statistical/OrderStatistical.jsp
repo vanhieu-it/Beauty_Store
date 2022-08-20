@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -58,17 +58,17 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">Order Management</h1>
+					<h1 class="text-center">Quản lý đơn hàng</h1>
 					<table
 						class="table table-hover table-bordered table-striped text-center">
 						<tr>
-							<th>ID Order</th>
-							<th>Username</th>
-							<th>Phone</th>
-							<th>Fullname</th>
-							<th>Total</th>
-							<th>Status</th>
-							<th>Action</th>
+							<th>ID</th>
+							<th>User</th>
+							<th>SDT</th>
+							<th>Tên</th>
+							<th>Giá trị</th>
+							<th>Trạng thái</th>
+							<th></th>
 						</tr>
 						<php:forEach items="${orderTotals}" var="orderTotal">
 							<tr>

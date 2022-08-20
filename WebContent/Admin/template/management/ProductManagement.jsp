@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags
@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -65,17 +65,17 @@
 						class="table table-striped table-bordered table-hover text-center"
 						style="font-family:"TimesNewRoman", Times, serif; font-weight:300">
 						<tr class="table-primary">
-							<th>Image</th>
-							<th>Title</th>
-							<th>Rating</th>
-							<th>Sold</th>
-							<th>Price</th>
-							<th>Category</th>
-							<th>Brand</th>
-							<th>Discount</th>
-							<th>Add image</th>
-							<th>Edit</th>
-							<th>Delete</th>
+							<th>Hình ảnh</th>
+							<th>Tiêu đề</th>
+							<th>Đánh giá</th>
+							<th>Đã bán</th>
+							<th>Giá bán</th>
+							<th>Loại sản phẩm</th>
+							<th>Thương hiệu</th>
+							<th>Giản giá</th>
+							<th>Hình ảnh</th>
+							<th>Cập nhật</th>
+							<th>Xóa</th>
 						</tr>
 						<php:forEach items="${products}" var="product">
 							<tr>
@@ -105,11 +105,11 @@
 								</php:forEach>
 								<th>${product.getDiscount() }</th>
 								<th><a href="addImageProduct?id=${product.getId() }"
-									class="btn btn-success">Add Image</a></th>
+									class="btn btn-success">Thêm ảnh</a></th>
 								<th><a href="editProduct?id=${product.getId() }"
-									class="btn btn-danger">Edit</a></th>
+									class="btn btn-danger">Cập nhật</a></th>
 								<th><a href="deleteProduct?id=${product.getId() }"
-									class="btn btn-danger">Delete</a></th>
+									class="btn btn-danger">Xóa</a></th>
 
 							</tr>
 

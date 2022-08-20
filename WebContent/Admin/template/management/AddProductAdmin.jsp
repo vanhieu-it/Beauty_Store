@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,36 +57,36 @@
 			<%@include file="../component/leftbar.jsp"%>
 			<div class="main-panel">
 				<div class="content-wrapper">
-					<a href="product" class="btn btn-primary" >Go to list product</a>
-					<h1 class="text-center" style="padding-top: -50px">Add product</h1>
+					<a href="product" class="btn btn-primary" >Danh sách sản phẩm</a>
+					<h1 class="text-center" style="padding-top: -50px">Thêm sản phẩm</h1>
 					<form action="addProduct" method="post" 
 						style="width: 50%; margin: auto">
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Enter title</label> <input
+							<label for="" style="font-size: 18px">Tiêu đề</label> <input
 								name="title" type="text" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Enter description</label>
+							<label for="" style="font-size: 18px">Mô tả</label>
 							<textarea rows="9" cols="70" name="description" class="form-control" style="height: 70px"></textarea>
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Enter rating</label> <input
+							<label for="" style="font-size: 18px">Đánh giá</label> <input
 								type="text" class="form-control" value="5" disabled>
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Sold</label> <input
+							<label for="" style="font-size: 18px">Đã bán</label> <input
 								disabled type="text" class="form-control" value="0">
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Enter Price Value</label> <input
+							<label for="" style="font-size: 18px">Giá bán</label> <input
 								name="price" type="text" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Enter Discount Value</label> <input
+							<label for="" style="font-size: 18px">Giảm giá</label> <input
 								name="discount" type="text" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Select category</label> <select
+							<label for="" style="font-size: 18px">Loại sản phẩm</label> <select
 								name="category" id="select_projects" class="form-control"
 								style="padding: 3px; background-color: white; color: red">
 								<php:forEach items="${collections }" var="collection">
@@ -102,7 +103,7 @@
 							</select>
 						</div>
 						<div class="mb-4">
-							<label for="" style="font-size: 18px">Select Brand</label> <select
+							<label for="" style="font-size: 18px">Thương hiệu</label> <select
 								class="form-control" style="background-color: white; color: red; padding: 4px"
 								id="" name="brand">
 								<php:forEach items="${brands }" var="brand">
@@ -115,7 +116,7 @@
 						</php:if>
 						<div class="justify-content-center">
 							<button type="submit" class="btn btn-primary margin-center"
-								style="width: 100%">Submit</button>
+								style="width: 100%">Thêm sản phẩm</button>
 						</div>
 					</form>
 
