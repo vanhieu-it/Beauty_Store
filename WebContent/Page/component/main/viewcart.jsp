@@ -48,7 +48,8 @@
 									id="flexCheckDefault"
 									style="width: 18px; height: 18px; color: #4ca214;">
 							</div>
-							<a href="product_detail?id=${cartItem.getProduct().getId() }" class="cart-info">
+							<a href="product_detail?id=${cartItem.getProduct().getId() }"
+								class="cart-info">
 								<div class="cart-info__img">
 									<img src="${cartItem.getProduct().getFirstImage() }" alt="">
 								</div>
@@ -67,7 +68,7 @@
 						</div>
 					</div>
 					<div class="col-lg-2 text-center justify-content-center">
-						<form action=""  id="form${cartItem.getProduct().getId() }">
+						<form action="" id="form${cartItem.getProduct().getId() }">
 							<div class="option-quantity justify-content-center">
 								<button type="button" class="btn btn-success rounded-0"
 									onclick="sub ( ${cartItem.getProduct().getId()} , ${cartItem.getProduct().getPrice() }); subAjax(${cartItem.getProduct().getId()}, ${ cartItem.getNumber()})">-</button>
@@ -82,9 +83,10 @@
 					</div>
 					<div class="col-lg-1">
 						<div class="cart-info__total-price text-center">
-							<input class="col-lg-12 cart_main_element_title_total" style="border: none"
+							<input class="col-lg-12 cart_main_element_title_total"
+								style="border: none"
 								id="totalPrice${cartItem.getProduct().getId() }"
-								value="${cartItem.getTotalSingleFormat() }"  >
+								value="${cartItem.getTotalSingleFormat() }">
 						</div>
 					</div>
 					<div class="col-lg-1">

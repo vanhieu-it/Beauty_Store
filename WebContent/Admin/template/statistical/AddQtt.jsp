@@ -57,7 +57,7 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">Thay đổi số lượng sản phẩm</h1>
+					<h1 class="text-center">Thay đổi thông tin sản phẩm</h1>
 					<table
 						class="table table-striped table-bordered table-hover text-center"
 						style="font-family:"TimesNewRoman", Times, serif; font-weight:300">
@@ -89,7 +89,10 @@
 								<td style="overflow:"hidden"; text-overflow:ellipsis; max-width: 25ch;" >${product.getTitle() }</td>
 								<td>${product.getRating() }</td>
 								<td>${product.getSold() }</td>
-								<td>${product.getPriceDefault() }</td>
+								<!--<td>${product.getPriceDefault() }</td>-->
+								<td class="justify-content-center text-center"><input
+										class="form-control text-center" name="price"
+										value=${product.getPriceDefault()  } /></td>
 								<php:forEach items="${categories}" var="category">
 									<php:if test="${category.getId() == product.getCategory()}">
 										<td>"${category.getName() }"</td>

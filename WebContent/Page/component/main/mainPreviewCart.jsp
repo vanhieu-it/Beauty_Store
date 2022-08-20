@@ -33,7 +33,8 @@
 
 
 		</div>
-		<form action="confirmOrder" class="form_to_comfirm_order row align-items-center "
+		<form action="confirmOrder"
+			class="form_to_comfirm_order row align-items-center "
 			style="width: 80%" method="POST">
 			<div
 				class="form_to_comfirm_order_order col-md-8 row flex-column justify-content-center">
@@ -51,14 +52,16 @@
 				</div>
 				<div class="row">
 					<label for="" class="col-md-6">Nhập Số điện thoại</label> <input
-						style="width: 250px" type="text" value="${userLogin.getPhone() }" name="orderPhone" id="phoneNumberCheck" onchange="checkPhone()"
+						style="width: 250px" type="text" value="${userLogin.getPhone() }"
+						name="orderPhone" id="phoneNumberCheck" onchange="checkPhone()"
 						placeholder="Số điện thoại">
-					<p id="phoneNumberCheckMess" class="text-danger" style="font-size: 14px"></p>
+					<p id="phoneNumberCheckMess" class="text-danger"
+						style="font-size: 14px"></p>
 				</div>
 				<div class="row">
-					<label for="" class="col-md-6">Email (Edit in your profile)</label> <input
-						style="width: 250px" type="text" value="${userLogin.getEmail() }" name="emailOrder" id="email" 
-					>
+					<label for="" class="col-md-6">Email (Edit in your profile)</label>
+					<input style="width: 250px" type="text"
+						value="${userLogin.getEmail() }" name="emailOrder" id="email">
 				</div>
 				<div class="row">
 					<label for="" class="col-md-6">Nhập đơn vị vận chuyển</label> <select
@@ -81,23 +84,22 @@
 					<textarea name="orderNote" wrap="off" cols="28" rows="5"
 						placeholder="Nhập ghi chú của bạn ..."></textarea>
 				</div>
-				
+
 				<php:if test="${message.isEmpty() != true }">
-					<h5 class="mt-4 text-danger" >${message }</h5>
+					<h5 class="mt-4 text-danger">${message }</h5>
 				</php:if>
 
 			</div>
 			<input type="hidden" name="hidden_transport" id="hidden_transport"
-				value="${transports.get(0).getId() }"> 
-			<input type="hidden"
+				value="${transports.get(0).getId() }"> <input type="hidden"
 				name="hidden_total" id="hidden_total" value="${totalOrder}">
-			<input type="hidden"
-				name="oldtotal" id="oldtotal" value="${totalOrder}">
-			<input type="hidden" name="hidden_coupon" id="hidden_coupon" value="" >
-			<input type="hidden" name="userLogin" id="user_id" value="${userLoginId }" >
+			<input type="hidden" name="oldtotal" id="oldtotal"
+				value="${totalOrder}"> <input type="hidden"
+				name="hidden_coupon" id="hidden_coupon" value=""> <input
+				type="hidden" name="userLogin" id="user_id" value="${userLoginId }">
 			<div style="min-width: 350px"
 				class="row form_to_comfirm_order_submit col-md-4 flex-column justify-content-end align-items-end text-center">
-				
+
 				<div
 					class="form_to_comfirm_order_submit-price row col-md-12 text-right align-items-center justify-content-end">
 					<p>Thành tiền (VND)</p>

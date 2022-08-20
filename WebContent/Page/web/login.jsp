@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="Page/css/web.css">
     <link rel="stylesheet" href="Page/css/login.css">
     <link rel="stylesheet" href="Page/css/cartMainCss.css">
-    <title>Login Beauty Store</title>
+    <title>Đăng nhập Beauty Store</title>
 </head>
 <body>
     
@@ -53,7 +53,7 @@
 <script src="./js/web.js"></script>
 <script>
 	function ngu(){
-		alert('Quên mật khẩu rồi hả :D');
+		alert('Quên mật khẩu :D');
 	}
 </script>
 </html>

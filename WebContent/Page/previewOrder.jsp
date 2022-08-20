@@ -109,9 +109,9 @@
 
 		console.log(typeof num);
 		if (num.toString().length < 10) {
-			$("#phoneNumberCheckMess").html("Số điện thoại trên 10 số") ;
+			$("#phoneNumberCheckMess").html("Số điện thoại từ 10 số") ;
 		} else if ($.isNumeric(num) != true) {
-			$("#phoneNumberCheckMess").html("Nhập số điện thoại đúng định dạng giùm với ạ!") ;
+			$("#phoneNumberCheckMess").html("Số điện thoại chưa đúng định dạng!") ;
 		}
 
 	}

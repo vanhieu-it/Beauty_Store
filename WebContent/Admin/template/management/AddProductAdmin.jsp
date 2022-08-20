@@ -82,7 +82,7 @@
 								name="price" type="text" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Giảm giá</label> <input
+							<label for="" style="font-size: 18px">Giảm giá (%)</label> <input
 								name="discount" type="text" class="form-control">
 						</div>
 						<div class="form-group">

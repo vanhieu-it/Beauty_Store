@@ -57,7 +57,7 @@
 			<%@include file="../component/leftbar.jsp"%>
 			<div class="main-panel">
 				<div class="content-wrapper">
-					<h1 class="text-center">List User</h1>
+					<h1 class="text-center">Danh sách User</h1>
 					<table
 						class="table table-striped table-bordered table-hover text-center"
 						style="font-family:" Times NewRoman", Times, serif; font-weight:300">

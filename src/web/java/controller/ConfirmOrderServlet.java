@@ -127,14 +127,16 @@ public class ConfirmOrderServlet extends HttpServlet {
 		System.out.println(discountAmount);
 		System.out.println(totalOrder);
 		// start send email
-
-		final String username = "dangushopjava@gmail.com";
-		final String password = "dangushop123";
+		final String username = "dohieu99it@gmail.com";
+		final String password = "ylmpkfaxzrsnblga";
 		Properties properties = new Properties();
 		properties.put("mail.smtp.host", "smtp.gmail.com");
-		properties.put("mail.smtp.port", "587");
+		properties.put("mail.smtp.port", "465");
+		properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		properties.put("mail.smtp.auth", "true");
-		properties.put("mail.smtp.starttls.enable", "true");
+		properties.put("mail.smtp.starttls.enable", "false");
+		properties.put("mail.debug", "true");
+
 
 		javax.mail.Session sessionEmail = javax.mail.Session.getInstance(properties, new Authenticator() {
 			protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
