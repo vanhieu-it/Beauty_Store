@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
@@ -6,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,11 +58,10 @@
 			<%@include file="../component/leftbar.jsp"%>
 			<div class="main-panel">
 				<div class="content-wrapper">
-					<a href="product" class="btn btn-primary">Return to product
-						page</a>
-					<h1 class="text-center" style="padding-top: -50px">Add Image</h1>
+					<a href="product" class="btn btn-primary">TRỞ VỀ</a>
+					<h1 class="text-center" style="padding-top: -50px">Thêm ảnh</h1>
 					<php:if test="${images.isEmpty() == true}">
-						<p class="text-center" style="color: red">No image found</p>
+						<p class="text-center" style="color: red">Không tìm thấy ảnh</p>
 					</php:if>
 					<form action="addImageProduct" method="post" >
 						<input type="hidden" name="id" value="${product.getId() }">
@@ -82,12 +83,11 @@
 						</php:if>
 
 						<div class="form-group">
-							<label for="" style="font-size: 18px">Enter image link to
-								add</label> <input name="image" type="text" class="form-control">
+							<label for="" style="font-size: 18px">Đường dẫn ảnh:</label> <input name="image" type="text" class="form-control">
 						</div>
 						<div class="justify-content-center">
 							<button type="submit" class="btn btn-primary margin-center"
-								style="width: 100%">Add</button>
+								style="width: 100%">Thêm ảnh</button>
 						</div>
 					</form>
 

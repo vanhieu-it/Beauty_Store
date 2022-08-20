@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//WebContent/Admin/template/component/navbarMenu.jsp=UTF-8
 encoding//WebContent/Admin/template/index.jsp=UTF-8
+encoding//WebContent/Admin/template/management/AddImageAdmin.jsp=UTF-8
 encoding//WebContent/Admin/template/management/CategoryManagement.jsp=UTF-8
 encoding//WebContent/Admin/template/management/EventManagement.jsp=UTF-8
 encoding//WebContent/Admin/template/management/ProductManagement.jsp=UTF-8

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,13 +57,13 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">List Event</h1>
+					<h1 class="text-center">Danh sách sự kiện</h1>
 					<table class="table table-striped table-hover table-bordered text-center">
 						<tr>
-							<th>Name Event</th>
+							<th>Tên sự kiện</th>
 							<th>Icon</th>
-							<th>Product</th>
-							<th>Change</th>
+							<th>Sản Phẩm</th>
+							<th></th>
 						</tr>
 						<php:forEach items="${events }" var="event">
 							<tr>
@@ -79,7 +80,7 @@
 										</php:forEach>
 									</ul>
 								</td>
-								<td> <a class="btn btn-danger" href="eventEdit?id=${event.getId() }">Edit</a></td>
+								<td> <a class="btn btn-danger" href="eventEdit?id=${event.getId() }">Cập nhật</a></td>
 							</tr>
 						</php:forEach>
 					</table>

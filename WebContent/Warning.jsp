@@ -16,9 +16,8 @@
 		style="background-color: #0a0a0a; color: red">
 		<h1 class="text-center ">You not have permission to go here</h1>
 		<a href="home" class="text-center btn btn-danger mt-4">Return to
-			home</a> <img
-			src="https://i.pinimg.com/originals/5b/d2/f8/5bd2f8db902b388efb2b6abcaabc85a2.jpg"
-			style="width: 100%">
+			home</a> 
+			
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

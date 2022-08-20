@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,8 +57,8 @@
 			<%@include file="../component/leftbar.jsp"%>
 			<div class="main-panel">
 				<div class="content-wrapper">
-					<a href="event" class="btn btn-primary">Return to event page</a>
-					<h1 class="text-center" style="padding-top: -50px">List Event</h1>
+					<a href="event" class="btn btn-primary">Trở về</a>
+					<h1 class="text-center" style="padding-top: -50px">Danh sách sự kiện</h1>
 					<div
 						class="d-flex text-center justify-content-center align-items-center">
 						<img alt="" src="${event.getIcon() }" class="col-md-4"
@@ -68,9 +69,9 @@
 						<input type="hidden" name="eventId" value="${event.getId() }">
 						<table class="table table-hover table-striped table-bordered text-center">
 							<tr>
-								<td>Title</td>
-								<td>Discount Amount</td>
-								<td>Delete</td>
+								<td>Tiêu đề</td>
+								<td>Giá giảm</td>
+								<td>Xóa</td>
 							</tr>
 							<php:forEach items="${EPs }" var="EP">
 								<php:forEach items="${products }" var="product">
@@ -80,7 +81,7 @@
 											<th>${product.getDiscount() }</th>
 
 											<th><a class="btn btn-danger"
-												href="eventDelete?event=${event.getId() }&product=${product.getId()}">Delete</a></th>
+												href="eventDelete?event=${event.getId() }&product=${product.getId()}">Xoá</a></th>
 										</tr>
 									</php:if>
 								</php:forEach>
@@ -89,7 +90,7 @@
 
 						</table>
 						<div class="form-group">
-							<label for="">Choose product to add to event</label> <select
+							<label for="">Thêm sản phẩm vào sự kiện</label> <select
 								name="productId" class="form-control text-center" 
 								style="background-color: white; padding: 0px 10px; color: red;">
 
@@ -107,7 +108,7 @@
 
 							</select>
 						</div>
-						<input type="submit" class="btn btn-primary" style="width: 100%" value="Add to event">
+						<input type="submit" class="btn btn-primary" style="width: 100%" value="Thêm vào sự kiện">
 					</form>
 
 				</div>

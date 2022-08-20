@@ -40,22 +40,6 @@
 				</ul>
 			</div>
 
-			<div class="col-lg-9">
-				<div class="pro-cotton__sort">
-					<span>Sắp xếp theo: </span>
-					<div class="pro-cotton__sort--chosen">
-						<select class="form-select" aria-label="Default select example">
-							<option selected>Sản phẩm nổi bật</option>
-							<option value="1">Bán chạy nhất</option>
-							<option value="2">Tên: A-Z</option>
-							<option value="3">Tên: Z-A</option>
-							<option value="4">Giá: Tăng dần</option>
-							<option value="5">Giá: Giảm dần</option>
-							<option value="6">Mới nhất</option>
-							<option value="7">Cũ nhất</option>
-						</select>
-					</div>
-				</div>
 				<h3 class="pro-cotton__theme">${event.getName() }</h3>
 				<div class="row">
 					<php:forEach items="${products }" var="product">

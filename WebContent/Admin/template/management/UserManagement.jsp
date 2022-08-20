@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -63,12 +64,12 @@
 						<tr class="table-primary">
 							<th></th>
 							<th>Id</th>
-							<th>Username</th>
+							<th>UserName</th>
 							<th>Email</th>
-							<th>Fullname</th>
-							<th>Is Admin</th>
-							<th>Edit</th>
-							<th>Delete</th>
+							<th>Tên đầy đủ</th>
+							<th>Admin?</th>
+							<th>Cập nhật</th>
+							<th>Xóa</th>
 						</tr>
 						<php:forEach items="${users}" var="user">
 							<tr>
@@ -80,8 +81,8 @@
 								<th><input type="checkbox"
 									<php:if test="${user.getRole() == 1 }">checked</php:if>>
 								</th>
-								<th><a href="editUser?id=${user.getId() }" class="btn btn-warning">Edit</a></th>
-								<th><a href="deleteUser?id=${user.getId() }" class="btn btn-danger">Delete</a></th>
+								<th><a href="editUser?id=${user.getId() }" class="btn btn-warning">Cập nhật</a></th>
+								<th><a href="deleteUser?id=${user.getId() }" class="btn btn-danger">Xóa</a></th>
 							</tr>
 
 						</php:forEach>

@@ -22,7 +22,7 @@
 					<div class="footer-user">
 						<a href="" class="footer-user__icon"> <i class="fas fa-user"></i>
 						</a>
-						<p>Hỗ Trợ Đơn Hàng: Thegioiskinfood@Gmail.Com</p>
+						<p>Hỗ Trợ Đơn Hàng: beautystore@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -30,7 +30,7 @@
 						<a href="" class="footer-mail__icon"> <i
 							class="far fa-envelope"></i>
 						</a>
-						<p>Liên Hệ Hợp Tác: Sales@Thegioiskinfood.Com</p>
+						<p>Liên Hệ Hợp Tác: beautystore@gmail.com<</p>
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -38,8 +38,7 @@
 						<a href="" class="footer-address__icon"> <i
 							class="fas fa-map-marker-alt"></i>
 						</a>
-						<p>365 Lê Văn Sỹ, Phường 12, Quận 3 100 Hoàng Hoa Thám, Phường
-							12, Quận Tân Bình</p>
+						<p>97 Man Thiện, Phường Hiệp Phú, Thủ Đức, TP. Hồ Chí Minh</p>
 					</div>
 				</div>
 			</div>

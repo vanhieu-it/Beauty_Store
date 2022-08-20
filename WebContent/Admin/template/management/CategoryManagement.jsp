@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,11 +57,11 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">List Category</h1>
+					<h1 class="text-center">Loại sản phẩm</h1>
 					<table class="table table-striped table-bordered text-center">
 						<tr>
-							<th>Collection Name</th>
-							<th>List Category</th>
+							<th>Tên loại sản phẩm</th>
+							<th>Danh sách loại sản phẩm</th>
 						</tr>
 						<php:forEach items="${collections }" var="collection">
 							<tr>

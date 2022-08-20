@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,15 +57,15 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">Top 20 product best seller</h1>
+					<h1 class="text-center">20 sản phẩm bán chạy nhất</h1>
 					<table
 						class="table table-striped table-hover table-bordered text-center">
 						<tr>
 							<th>Top</th>
-							<th>Image</th>
-							<th>Title</th>
-							<th>Rating</th>
-							<th>Sold <svg xmlns="http://www.w3.org/2000/svg" width="16"
+							<th>Hình ảnh</th>
+							<th>Tiêu đề</th>
+							<th>Đánh giá</th>
+							<th>Đã bán <svg xmlns="http://www.w3.org/2000/svg" width="16"
 									height="16" fill="currentColor"
 									class="bi bi-chevron-double-down" viewBox="0 0 16 16">
   <path fill-rule="evenodd"
@@ -73,9 +74,9 @@
 										d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
 </svg>
 							</th>
-							<th>Price</th>
-							<th>Category</th>
-							<th>Brand</th>
+							<th>Giá</th>
+							<th>Loại</th>
+							<th>Thương hiệu</th>
 						</tr>
 						<php:forEach items="${products }" var="product" varStatus="i">
 							<tr style="font-weight: 700; font-family: Verdana, sans-serif;">

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,16 +57,16 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">Top 20 user contribute</h1>
+					<h1 class="text-center">20 người mua hàng nổi bật</h1>
 					<table
 						class="table table-striped table-hover table-bordered text-center">
 						<tr>
 							<th>Top</th>
 							<th>Image</th>
 							<th>Username</th>
-							<th>Fullname</th>
+							<th>Tên khách hàng</th>
 							<th>Email</th>
-							<th>Total buy <svg xmlns="http://www.w3.org/2000/svg"
+							<th>Tổng tiền đã mua <svg xmlns="http://www.w3.org/2000/svg"
 									width="16" height="16" fill="currentColor"
 									class="bi bi-chevron-double-down" viewBox="0 0 16 16">
   <path fill-rule="evenodd"

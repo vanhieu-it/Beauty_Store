@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="php"%>
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Admin Page</title>
+<title>Admin</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="Admin/template/vendors/feather/feather.css"
 	type="text/css" media="screen">
@@ -56,21 +57,21 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: 100%">
-					<h1 class="text-center">Please choose product to add quantity</h1>
+					<h1 class="text-center">Thay đổi số lượng sản phẩm</h1>
 					<table
 						class="table table-striped table-bordered table-hover text-center"
 						style="font-family:"TimesNewRoman", Times, serif; font-weight:300">
 						<tr class="table-primary">
-							<th>Image</th>
-							<th>Title</th>
-							<th>Rating</th>
-							<th>Sold</th>
-							<th>Price</th>
-							<th>Category</th>
-							<th>Brand</th>
-							<th>Discount</th>
-							<th>Quantity</th>
-							<th>Change</th>
+							<th>Hình ảnh</th>
+							<th>Tiêu đề</th>
+							<th>Đánh giá</th>
+							<th>Đã bán</th>
+							<th>Giá bán</th>
+							<th>Loại sản phẩm</th>
+							<th>Thương hiệu</th>
+							<th>Giảm giá</th>
+							<th>Số lượng</th>
+							<th>Cập nhật</th>
 						</tr>
 						<php:forEach items="${products}" var="product">
 							<tr style="font-size: 20px; font-weight: 600">
@@ -106,7 +107,7 @@
 										class="form-control text-center" name="qtt"
 										value=${product.getQtt() } /></td>
 									<td><input type="submit" class="btn btn-success"
-										value="change" /></td>
+										value="Cập nhật" /></td>
 								</form>
 
 

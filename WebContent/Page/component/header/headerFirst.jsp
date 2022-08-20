@@ -15,29 +15,18 @@
 						class="fab fa-google-plus-g"></i></a></li>
 			</ul>
 
-			<div class="contact-product">
-				<div class="product-viewed">
-					<i class="icon-down fas fa-chevron-down"></i> <span>Sản phẩm
-						đã xem</span>
-				</div>
-			</div>
+			
 		</div>
 		<div class="header-second__contact">
-			<ul class="contact-phone">
-				<li class="contact-province">
-					<div class="contact-province__choose">
-						<span>Chọn miền</span> <i
-							class="contact-province__icon fas fa-sort-down"></i>
-					</div>
-				</li>
+			<ul class="contact-phone">				
 				<li class="contact-hotline">
 					<div class="contact-hotline__phone">
-						<span>Hotline: <span class="phone">0911 384 114</span></span>
+						<span>Hotline: <span class="phone">0911 111 111</span></span>
 					</div>
 				</li>
 				<li class="contact-switchboard">
 					<div class="contact-switchboard__phone">
-						<span>Tổng đài tư vấn: <span class="phone">1900 7013</span></span>
+						<span>Tổng đài tư vấn: <span class="phone">1900 11111</span></span>
 					</div>
 				</li>
 			</ul>
