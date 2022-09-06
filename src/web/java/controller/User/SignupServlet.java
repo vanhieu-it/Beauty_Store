@@ -95,12 +95,12 @@ public class SignupServlet extends HttpServlet {
 				MimeMessage message = new MimeMessage(sessionEmail);
 				message.setFrom(new InternetAddress(username));
 				message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(request.getParameter("email")));
-				message.setSubject("Welcome to our shop");
-				message.setContent("<div style=\"display: flex;\">\r\n" + "      <p>Thank you,</p>"
+				message.setSubject("Welcome to Beauty Store");
+				message.setContent("<div style=\"display: flex;\">\r\n" + "      <p>Cảm ơn đã đăng ký,</p>"
 						+ "      <p style=\"font-style: italic; color: red\"> " + request.getParameter("fullname")
-						+ "</p>\r\n" + "      <p>. Your username in our shop is: </p>\r\n"
+						+ "</p>\r\n" + "      <p>. Username bạn đã đăng ký là : </p>\r\n"
 						+ "      <p style=\"font-style: italic; color: red\"> " + request.getParameter("username")
-						+ "</p>\r\n" + "      <p>, hope you have good experience in our shop</p>\r\n" + "\r\n"
+						+ "</p>\r\n" + "      <p>, Chúc bạn có trải nghiệm tốt ở website của chúng tôi.</p>\r\n" + "\r\n"
 						+ "    </div>", "text/html;charset=UTF-8");
 				Transport.send(message);
 			} catch (MessagingException mex) {

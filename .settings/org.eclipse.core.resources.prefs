@@ -13,5 +13,6 @@ encoding//WebContent/Page/component/header/headerFirst.jsp=UTF-8
 encoding//WebContent/Page/component/header/headerSecond.jsp=UTF-8
 encoding//WebContent/Page/productDetail.jsp=UTF-8
 encoding//src/web/java/AdminController/AdHomeController.java=UTF-8
+encoding//src/web/java/controller/User/SignupServlet.java=UTF-8
 encoding//src/web/java/dao/ProductDAO.java=UTF-8
 encoding//src/web/java/dao/UserDAO.java=UTF-8

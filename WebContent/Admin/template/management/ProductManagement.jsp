@@ -59,8 +59,8 @@
 			<div class="main-panel">
 				<div class="content-wrapper"
 					style="padding: 20px; margin: 10px; width: auto">
-					<a href="addProduct" class="btn btn-primary">Add more product</a>
-					<h1 class="text-center">List Product</h1>
+					<a href="addProduct" class="btn btn-primary">Thêm sản phẩm</a>
+					<h1 class="text-center">Danh sách sản phẩm</h1>
 					<table
 						class="table table-striped table-bordered table-hover text-center"
 						style="font-family:"TimesNewRoman", Times, serif; font-weight:300">
