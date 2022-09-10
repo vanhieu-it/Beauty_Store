@@ -99,7 +99,7 @@ public class ConfirmOrderServlet extends HttpServlet {
 				return;
 			}
 
-			request.setAttribute("message", "Please fill all information");
+			request.setAttribute("message", "Vui lòng nhập đầy đủ thông tin !!!");
 			request.setAttribute("totalOrder", cart.getTotal());
 			request.setAttribute("totalFormat", String.format("%1$,.0f", cart.getTotal() + transportFee));
 
