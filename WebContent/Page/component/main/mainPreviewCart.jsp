@@ -59,7 +59,7 @@
 						style="font-size: 14px"></p>
 				</div>
 				<div class="row">
-					<label for="" class="col-md-6">Email (Edit in your profile)</label>
+					<label for="" class="col-md-6">Email</label>
 					<input style="width: 250px" type="text"
 						value="${userLogin.getEmail() }" name="emailOrder" id="email">
 				</div>
