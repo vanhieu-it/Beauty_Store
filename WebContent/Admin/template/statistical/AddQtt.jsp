@@ -66,10 +66,11 @@
 							<th>Tiêu đề</th>
 							<th>Đánh giá</th>
 							<th>Đã bán</th>
-							<th>Giá bán</th>
+							
 							<th>Loại sản phẩm</th>
 							<th>Thương hiệu</th>
 							<th>Giảm giá</th>
+							<th>Giá bán</th>
 							<th>Số lượng</th>
 							<th>Cập nhật</th>
 						</tr>
@@ -90,9 +91,7 @@
 								<td>${product.getRating() }</td>
 								<td>${product.getSold() }</td>
 								<!--<td>${product.getPriceDefault() }</td>-->
-								<td class="justify-content-center text-center"><input
-										class="form-control text-center" name="price"
-										value=${product.getPriceDefault()  } /></td>
+								
 								<php:forEach items="${categories}" var="category">
 									<php:if test="${category.getId() == product.getCategory()}">
 										<td>"${category.getName() }"</td>
@@ -106,6 +105,9 @@
 								<td>${product.getDiscount() }</td>
 								<form action="updateQtt" method="post">
 									<input type="hidden" name="product" value="${product.getId() }" />
+									<td class="justify-content-center text-center"><input
+										class="form-control text-center" name="price"
+										value=${product.getPriceDefault()  } /></td>
 									<td class="justify-content-center text-center"><input
 										class="form-control text-center" name="qtt"
 										value=${product.getQtt() } /></td>

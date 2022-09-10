@@ -318,13 +318,14 @@ public class ProductDAO {
 		return 0;
 	}
 
-	public void updateQtt(String product, String qtt) {
-		String query = "update product set quantity = ? where id = ?";
+	public void updateQtt(String product,String price, String qtt) {
+		String query = "update product set quantity = ? , price_default = ? where id = ?";
 		try {
 			conn = new ConnectDB().getDBConnection();
 			ps = conn.prepareStatement(query);
 			ps.setString(1, qtt);
-			ps.setString(2, product);
+			ps.setDouble(2, Double.parseDouble(price));
+			ps.setString(3, product);
 			ps.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -71,7 +71,7 @@ public class AdAddQuantityServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		ProductDAO productDAO = new ProductDAO();
 
-		productDAO.updateQtt(request.getParameter("product"), request.getParameter("qtt"));
+		productDAO.updateQtt(request.getParameter("product"),request.getParameter("price"), request.getParameter("qtt"));
 
 		String page = "";
 		if (request.getParameter("page") == null) {
